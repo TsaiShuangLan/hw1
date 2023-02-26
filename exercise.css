@@ -1,0 +1,107 @@
+
+body {
+  background:rgba(0, 0, 0, 1);
+  /* Step 1: reset margin is a good practice for consistency across browsers. */
+  margin: 0;
+}
+
+#navbar, #banner, #main, #bottom {
+  background-color: white;
+  /* Step 2 code goes here */
+  max-width: 600px;
+  width: 100%;
+}
+
+#navbar {
+  line-height: 0;
+  padding: 5px 0;
+  top: 0;
+
+  /* Step 6 code goes here */
+  position: relative;
+}
+
+i.avatar, i.icon {
+  background-position: center;
+
+  /* Step 3 code goes here */
+  display: inline-block;
+  height: 30px;
+}
+
+i.avatar {
+  background-size: cover;
+  border-radius: 15px;
+  width: 30px;
+}
+
+i.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+}
+
+.right {
+
+  /* Step 4 code goes here */
+  position: absolute;
+  right: 0.5em;
+}
+
+.avatar      { background-image: url(https://i.pravatar.cc/30) }
+.icon.arrow  { background-image: url(./res/angle-left.jpg) }
+.icon.dot    { background-image: url(./res/dot.svg) }
+.icon.submit { background-image: url(./res/external-link.svg) }
+
+#banner {
+
+  /* Step 5 code goes here */
+  background: url(./res/main.jpg) center / cover;
+  top: 40px;
+  height: 250px;
+
+  /* Step 6 code goes here */
+
+}
+
+#main {
+  box-sizing: border-box;
+  padding: 1px 4% 5vh;
+  position: relative;
+  top: 290px;
+
+  /* Step 7 code goes here */
+
+}
+
+.info {
+
+  /* Step 8 code goes here */
+
+  margin: 0 0 5% 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  line-height: 30px;
+}
+
+#bottom {
+  bottom: 0;
+  display: inline-flex;
+  position: fixed;
+}
+
+#reference {
+  background: url('./res/detail-2.gif') center / cover;
+  bottom: 0;
+  padding: .5em;
+  position: fixed;
+  right: 0;
+  text-align: right;
+  top: 0;
+  width: 40vw;
+}
