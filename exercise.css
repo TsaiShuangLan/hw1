@@ -1,12 +1,11 @@
 
 body {
-  background:rgba(0, 0, 0, 1);
-  /* Step 1: reset margin is a good practice for consistency across browsers. */
+  background:#FCC608;
   margin: 0;
 }
 
 #navbar, #banner, #main, #bottom {
-  background-color: white;
+  background-color: #ffffff;
   /* Step 2 code goes here */
   max-width: 600px;
   width: 100%;
@@ -95,13 +94,3 @@ p {
   position: fixed;
 }
 
-#reference {
-  background: url('./res/detail-2.gif') center / cover;
-  bottom: 0;
-  padding: .5em;
-  position: fixed;
-  right: 0;
-  text-align: right;
-  top: 0;
-  width: 40vw;
-}
