@@ -2,28 +2,110 @@
 body {
   background:#FCC608;
   margin: 0;
+  font-family: 'Aleo', serif;
+  font-weight: 600;
 }
 
-#navbar, #banner, #main, #bottom {
+h1 {
+  font-size: 60px;
+}
+
+p {
+  line-height: 30px;
+}
+
+#banner, #main, #bottom {
   background-color: #ffffff;
-  /* Step 2 code goes here */
-  max-width: 600px;
   width: 100%;
 }
 
+/*navigation bar*/
 #navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #ffffff;
   line-height: 0;
   padding: 5px 0;
   top: 0;
+  position: fixed;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 
-  /* Step 6 code goes here */
+}
+#navbar .logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px;
+}
+#navbar .logo p{
+  padding: 0 10px;
+}
+#navbar .list{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 40px;
+}
+#navbar .list p{
+  padding: 0 20px;
+}
+#navbar .list p:hover{
+  color: #FCC608;
+}
+/*yellow mainpage*/
+#mainpage {
+  width: 100%;
+  
+}
+#mainpage .dog-background{
+  width: 100%;
+  position: relative;
+}
+#mainpage .dog-background img {
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-top: 130px;
+}
+#mainpage .dog-moving{
+  width: 100%;
+  position: relative;
+}
+#mainpage .dog-moving img {
+  display: flex;
+  width: 40%;
+  margin-left: 55.5%;
+  margin-top: -41%;
+}
+#mainpage .word{
+  width: 80%;
   position: relative;
 }
 
+#mainpage .word h1 {
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  margin-top: -49%;
+}
+#mainpage .word p {
+  display: flex;
+  width: 100%;
+  line-height: 1.2;
+  margin-left: 10%;
+  margin-top: -2%;
+}
+
+/*
 i.avatar, i.icon {
   background-position: center;
 
-  /* Step 3 code goes here */
+  
   display: inline-block;
   height: 30px;
 }
@@ -42,24 +124,22 @@ i.icon {
 
 .right {
 
-  /* Step 4 code goes here */
+  //Step 4 code goes here 
   position: absolute;
   right: 0.5em;
 }
 
 .avatar      { background-image: url(https://i.pravatar.cc/30) }
-.icon.arrow  { background-image: url(./res/angle-left.jpg) }
+.icon.arrow  { background-image: url(https://ppt.cc/fUqODx@.png) }
 .icon.dot    { background-image: url(./res/dot.svg) }
 .icon.submit { background-image: url(./res/external-link.svg) }
 
 #banner {
 
-  /* Step 5 code goes here */
   background: url(./res/main.jpg) center / cover;
   top: 40px;
   height: 250px;
 
-  /* Step 6 code goes here */
 
 }
 
@@ -69,19 +149,17 @@ i.icon {
   position: relative;
   top: 290px;
 
-  /* Step 7 code goes here */
 
 }
 
 .info {
 
-  /* Step 8 code goes here */
-
   margin: 0 0 5% 0;
 }
+*/
 
 h1 {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 p {
