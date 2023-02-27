@@ -164,7 +164,7 @@ p {
 }
 
 
-
+/*
 .pi{
   width: 100%;
   height: 100vh;
@@ -181,15 +181,43 @@ p {
   display: flex;
   width: 100%;
   position: relative;
-  top: -40px;
-  /*margin-left: auto;*/
-  /*margin-top: 130px;*/
+  top: 0%;
+  //margin-left: auto;
+  //margin-top: 130px;
+}*/
+
+.pi .text{
+  width: 80%;
+  position: relative;
 }
 
-.pi .four-block{
+.pi .text p {
+  display: flex;
+  width: 100%;
+  line-height: 1.2;
+  margin-left: 10%;
+  margin-top: -10%;
+}
+
+.pi2{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url('https://ppt.cc/fZbuSx@.png');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding-top: 40px;
+}
+.pi2 .text{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pi2 .four-block{
  
   position: relative;
-  margin-top: -100%;
+  
   width: 90%;
   height: 70%;
   margin-left: auto;
@@ -197,14 +225,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20%;
   padding-bottom: 20%;
   z-index: 50;
   /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
 
 
 }
-.pi .four-block .block{
+.pi2 .four-block .block{
   background-color: #ffffff;
   width: 22%;
   margin: 0 10px;
@@ -216,76 +243,22 @@ p {
   height:100%
 }
 
-.pi .four-block .block:hover{
+.pi2 .four-block .block:hover{
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.pi .four-block .block img{
+.pi2 .four-block .block img{
   width: 100%;
 }
-.pi .four-block .block .font{
+.pi2 .four-block .block .font{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-/*
-i.avatar, i.icon {
-  background-position: center;
-
-  
-  display: inline-block;
-  height: 30px;
-}
-
-i.avatar {
-  background-size: cover;
-  border-radius: 15px;
-  width: 30px;
-}
-
-i.icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 20px;
-}
-
-.right {
-
-  //Step 4 code goes here 
-  position: absolute;
-  right: 0.5em;
-}
-
-.avatar      { background-image: url(https://i.pravatar.cc/30) }
-.icon.arrow  { background-image: url(https://ppt.cc/fUqODx@.png) }
-.icon.dot    { background-image: url(./res/dot.svg) }
-.icon.submit { background-image: url(./res/external-link.svg) }
-
-#banner {
-
-  background: url(./res/main.jpg) center / cover;
-  top: 40px;
-  height: 250px;
 
 
-}
-
-#main {
-  box-sizing: border-box;
-  padding: 1px 4% 5vh;
-  position: relative;
-  top: 290px;
-
-
-}
-
-.info {
-
-  margin: 0 0 5% 0;
-}
-*/
 
 
 
