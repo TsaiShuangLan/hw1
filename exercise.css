@@ -55,6 +55,7 @@ p {
   padding: 0 20px;
 }
 #navbar .list p:hover{
+/*  font-weight: 700;*/
   color: #FCC608;
 }
 /*yellow mainpage*/
@@ -257,7 +258,8 @@ p {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
+  /*cover*/
 }
 
 .pi2 .four-block .block .inside{
