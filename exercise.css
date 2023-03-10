@@ -61,7 +61,7 @@ p {
 /*yellow mainpage*/
 #mainpage {
   width: 100%;
-  height: 120vh;
+  height: fit-content; /*120vh*/
 }
 #mainpage .dog-background{
   width: 100%;
