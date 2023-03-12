@@ -1,3 +1,14 @@
+var preload = document.getElementById("preload");
+    window.addEventListener('load',function(){
+        preload.style.display = "none";
+})
+
+window.onbeforeunload = function(){
+  //刷新后页面自动回到顶部
+  document.documentElement.scrollTop = 0;  //ie下
+  document.body.scrollTop = 0;  //非ie
+}
+
 let boxes = document.querySelectorAll(".ahhwe");
 
 window.addEventListener("scroll", checkBoxes);
