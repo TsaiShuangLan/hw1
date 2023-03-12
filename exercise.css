@@ -53,6 +53,9 @@ p {
 }
 #navbar .list p{
   padding: 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #navbar .list p:hover{
 /*  font-weight: 700;*/
