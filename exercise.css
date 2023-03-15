@@ -240,6 +240,7 @@ p {
 
 
 .pi2{
+  cursor: none;
   width: 100%;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
