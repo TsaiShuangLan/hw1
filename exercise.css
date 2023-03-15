@@ -15,7 +15,7 @@ p {
   line-height: 30px;
 }
 
-#banner, #main, #bottom {
+#main, #bottom {
   background-color: #ffffff;
   width: 100%;
 }
@@ -34,11 +34,11 @@ p {
 }
 
 #cursor{
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   position: absolute;
-  z-index: 100;
+  z-index: 1000;
   background-color: #fff;
   mix-blend-mode: difference;
   
@@ -134,7 +134,7 @@ p {
 #mainpage .show{
   width: 100%;
   height: 30%;
-  margin-top: 10%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,15 +147,18 @@ p {
   flex-direction: row;
   padding: 0 40px;
   margin-left: auto;
-  transform: translateX(-200%);
-  transition: transform 0s ease;
-  /*animation-delay: 3s;
+  transform: translateX(0%);
+  transition: 1s ease;
+  opacity:0;
+  /*
+  animation-delay: 3s;
   animation-name: appear;
   animation-duration: 4s;*/
 }
 
 #mainpage .show .number.ani{
   transform: translateX(0%);
+  opacity:1;
 }
 
 /*
@@ -234,6 +237,7 @@ p {
 .pi .text{
   width: 80%;
   position: relative;
+  z-index: 10;
 }
 
 .pi .text p {
@@ -249,7 +253,7 @@ p {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
-  background-image: url('https://ppt.cc/fZbuSx@.png');
+  background-image: url('https://ppt.cc/fO0HLx@.png');
   background-repeat: no-repeat;
   background-size: 100vw;
   padding-top: 40px;
@@ -258,6 +262,12 @@ p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  transform: translateX(-100%);
+  transition: transform 2s ease;
+  /*transition: 1s ease;*/
+}
+.pi2 .text.ani{
+  transform: translateX(0%);
   
 }
 
@@ -391,7 +401,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  line-height: 1;
+  line-height: 1.5;
   color:rgb(255, 255, 255);
 }
 

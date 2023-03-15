@@ -56,3 +56,22 @@ const cursor = document.getElementById("cursor");
     }
 
 window.addEventListener('mousemove', positionElement)
+
+/*word animation */
+let boxes2 = document.querySelectorAll(".text");
+
+window.addEventListener("scroll", showword);
+showword();
+
+function showword() {
+  console.log(window.innerHeight);
+  let triggerBottom2 = window.innerHeight * 0.8;
+  boxes2.forEach((text) => {
+    let boxTop2 = text.getBoundingClientRect().top;
+    if (boxTop2 < triggerBottom2) {
+      text.classList.add("ani");
+    } else {
+      text.classList.remove("ani");
+    }
+  });
+}
