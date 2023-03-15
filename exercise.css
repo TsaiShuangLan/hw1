@@ -179,7 +179,7 @@ p {
 
 #mainpage .show .ahhwe{
   position: fixed;
-
+  z-index: 45;
   width: 6%;
   height: fit-content;
   padding: 15px 0;
