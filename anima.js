@@ -25,3 +25,12 @@ function checkBoxes() {
     }
   });
 }
+
+    const cursor = document.getElementById("cursor");
+    const positionElement = (e)=> {
+        const mouseY = e.clientY;
+        const mouseX = e.clientX;
+        cursor.style.transform = `translate3d(${mouseX-50}px, ${mouseY-50}px, 0)`;
+    }
+
+window.addEventListener('mousemove', positionElement)
