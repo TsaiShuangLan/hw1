@@ -26,7 +26,7 @@ function checkBoxes() {
   });
 }
 
-    const cursor = document.getElementById("cursor");
+const cursor = document.getElementById("cursor");
     const positionElement = (e)=> {
         const mouseY = e.clientY;
         const mouseX = e.clientX;
