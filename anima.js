@@ -103,7 +103,7 @@ showright();
 
 function showright() {
   console.log(window.innerHeight);
-  let triggerBottom4 = window.innerHeight * 1.2;
+  let triggerBottom4 = window.innerHeight * 1.3;
   boxes4.forEach((rightline) => {
     let boxTop4 = rightline.getBoundingClientRect().top;
     if (boxTop4 < triggerBottom4) {
