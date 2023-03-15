@@ -34,8 +34,8 @@ p {
 }
 
 #cursor{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   position: absolute;
   z-index: 1000;

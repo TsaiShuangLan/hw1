@@ -5,8 +5,8 @@ var preload = document.getElementById("preload");
 })
 
 window.onbeforeunload = function(){
-  document.documentElement.scrollTop = 0;  //ie下
-  document.body.scrollTop = 0;  //非ie
+  document.documentElement.scrollTop = 0;  //ie download
+  document.body.scrollTop = 0;  //not ie
 }
 
 /* ahwe animation*/
@@ -17,7 +17,7 @@ checkBoxes();
 
 function checkBoxes() {
   console.log(window.innerHeight);
-  let triggerBottom = window.innerHeight * 0.7;
+  let triggerBottom = window.innerHeight * 0.8;
   boxes.forEach((ahhwe) => {
     let boxTop = ahhwe.getBoundingClientRect().top;
     if (boxTop < triggerBottom) {
@@ -103,7 +103,7 @@ showright();
 
 function showright() {
   console.log(window.innerHeight);
-  let triggerBottom4 = window.innerHeight * 1.2;
+  let triggerBottom4 = window.innerHeight * 1.3;
   boxes4.forEach((rightline) => {
     let boxTop4 = rightline.getBoundingClientRect().top;
     if (boxTop4 < triggerBottom4) {
