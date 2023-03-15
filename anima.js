@@ -50,9 +50,9 @@ function shownumber() {
 /* cursor*/
 const cursor = document.getElementById("cursor");
     const positionElement = (e)=> {
-        const mouseY = e.clientY;
-        const mouseX = e.clientX;
-        cursor.style.transform = `translate3d(${mouseX-50}px, ${mouseY-50}px, 0)`;
+        const mouseY = e.clientY+window.scrollY;
+        const mouseX = e.clientX+window.scrollX;
+        cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     }
 
 window.addEventListener('mousemove', positionElement)
@@ -72,6 +72,44 @@ function showword() {
       text.classList.add("ani");
     } else {
       text.classList.remove("ani");
+    }
+  });
+}
+
+/*left animation */
+let boxes3 = document.querySelectorAll(".leftline");
+
+window.addEventListener("scroll", showleft);
+showleft();
+
+function showleft() {
+  console.log(window.innerHeight);
+  let triggerBottom3 = window.innerHeight * 0.8;
+  boxes3.forEach((leftline) => {
+    let boxTop3 = leftline.getBoundingClientRect().top;
+    if (boxTop3 < triggerBottom3) {
+      leftline.classList.add("ani");
+    } else {
+      leftline.classList.remove("ani");
+    }
+  });
+}
+
+/*right animation */
+let boxes4 = document.querySelectorAll(".rightline");
+
+window.addEventListener("scroll", showright);
+showright();
+
+function showright() {
+  console.log(window.innerHeight);
+  let triggerBottom4 = window.innerHeight * 1.2;
+  boxes4.forEach((rightline) => {
+    let boxTop4 = rightline.getBoundingClientRect().top;
+    if (boxTop4 < triggerBottom4) {
+      rightline.classList.add("ani");
+    } else {
+      rightline.classList.remove("ani");
     }
   });
 }

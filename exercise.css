@@ -159,6 +159,7 @@ p {
 #mainpage .show .number.ani{
   transform: translateX(0%);
   opacity:1;
+  left: 0%;
 }
 
 /*
@@ -250,15 +251,57 @@ p {
 
 
 .pi2{
+  cursor: none;
   width: 100%;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
   background-image: url('https://ppt.cc/fO0HLx@.png');
   background-repeat: no-repeat;
   background-size: 100vw;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
+}
+.pi2 .leftline{
+  /*margin-top: -6%;*/
+  width: 100%;
+  position: relative;
+  z-index: 30;
+  transform: translateY(200%);
+  opacity:0;
+  transition: transform 1s ease;
+}
+
+.pi2 .leftline.ani{
+  transform: translateY(0%);
+  opacity:1;
+}
+
+.pi2 .leftline img{
+  width: 100%;
+  position: relative;
+  z-index: 30;
+}
+.pi2 .rightline{
+  margin-top: -6%;
+  width: 100%;
+  position: relative;
+  z-index: 40;
+  transform: translateY(100%);
+  opacity:0;
+  transition: transform 2s ease;
+}
+.pi2 .rightline.ani{
+  transform: translateY(0%);
+  opacity:1;
+}
+
+.pi2 .rightline img{
+  width: 100%;
+  position: relative;
+  z-index: 30;
 }
 .pi2 .text{
+  z-index:50;
+  margin-top: -35%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
