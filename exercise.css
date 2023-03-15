@@ -147,11 +147,17 @@ p {
   flex-direction: row;
   padding: 0 40px;
   margin-left: auto;
-  
+  transform: translateX(-200%);
+  transition: transform 0s ease;
   /*animation-delay: 3s;
   animation-name: appear;
   animation-duration: 4s;*/
 }
+
+#mainpage .show .number.ani{
+  transform: translateX(0%);
+}
+
 /*
 @keyframes appear{
  0% {color:#FCC608;}
